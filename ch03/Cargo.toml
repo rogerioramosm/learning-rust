@@ -1,10 +1,6 @@
 [package]
-name = "ex01"
+name = "ch03"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-
-[[bin]]
-name = "ex01"
-path = "./src/main.rs"
