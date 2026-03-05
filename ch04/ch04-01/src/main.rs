@@ -1,37 +1,13 @@
 fn main() {
-    // {
-    //   let s = "hello";
-
-    //   println!("{s}");
-    // }
-
-    // let mut s = String::from("hello");
-    // s.push_str(", world!");
-
-    // println!("{s}");
-
-    // let x = 5;
-    // let y = x;
-
-    // println!("{} {}", x, y);
-
-    // let s1 = String::from("hello");
-    // let s2 = s1;
-
-    // println!("{} {}", s1, s2);
-
-    // let mut s = String::from("hello");
-    // s = String::from("ahoy");
-
-    // println!("{s} world!");
-
     let s1 = String::from("hello");
-    let s2 = s1.clone();
 
-    println!("s1 = {s1}, s2 = {s2}");
+    let (s2, len) = calculate_length(s1);
 
-    let x = 5;
-    let y = x;
+    println!("The length os '{s2}' is {len}.");
+}
 
-    println!("x = {x}, y = {y}");
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); //len() retorna o tamanho da string
+
+    (s, length)
 }
